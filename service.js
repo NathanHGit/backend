@@ -11,10 +11,6 @@ function saveData() {
 }
 
 module.exports = function (app) {
-    app.get('/connection', function (request, response) {
-        response.send('Back connection done!');
-    });
-
     app.get('/history', function (request, response) {
         response.send(data.history);
     });
